@@ -19,10 +19,13 @@ Ao treinar uma IA, você pode optar por um modelo mais rápido, mas menos precis
 ### Privacidade x Conveniência:
 Ao usar um aplicativo que coleta muitos dados pessoais, você pode obter uma experiência mais conveniente, mas isso vem com o custo de abrir mão da sua privacidade.
 
-## 4. Classes UML
+## 4. Classes UML.
 
 <p align="center">
       <img src="imagem/uml.png" width="800" height="800">
 </p>
 
-## 5. JAVA
+## 5. JAVA.
+## 6. Testes automatizados.
+## 7. JAVA SQLite
+## 8. Usar ollama4j
