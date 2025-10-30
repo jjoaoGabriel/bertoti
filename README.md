@@ -19,8 +19,8 @@ Ao treinar uma IA, você pode optar por um modelo mais rápido, mas menos precis
 ### Privacidade x Conveniência:
 Ao usar um aplicativo que coleta muitos dados pessoais, você pode obter uma experiência mais conveniente, mas isso vem com o custo de abrir mão da sua privacidade.
 
-## 4. Listar e explicar 3 exemplos de tradeoffs.
+## 4. Classes UML
 
 <p align="center">
-      <img src="imagem/uml.png" width="600">
+      <img src="imagem/uml.png" width="400" height="400">
 </p>
