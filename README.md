@@ -22,5 +22,5 @@ Ao usar um aplicativo que coleta muitos dados pessoais, você pode obter uma exp
 ## 4. Classes UML
 
 <p align="center">
-      <img src="imagem/uml.png" width="600" height="600">
+      <img src="imagem/uml.png" width="800" height="800">
 </p>
