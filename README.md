@@ -21,4 +21,6 @@ Ao usar um aplicativo que coleta muitos dados pessoais, você pode obter uma exp
 
 ## 4. Listar e explicar 3 exemplos de tradeoffs.
 
-<img src="imagem/uml.png>
+<p align="center">
+      <img src="imagem/uml.png" width="600">
+</p>
