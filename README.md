@@ -20,3 +20,5 @@ Ao treinar uma IA, você pode optar por um modelo mais rápido, mas menos precis
 Ao usar um aplicativo que coleta muitos dados pessoais, você pode obter uma experiência mais conveniente, mas isso vem com o custo de abrir mão da sua privacidade.
 
 ## 4. Listar e explicar 3 exemplos de tradeoffs.
+
+<img src="imagem/uml.png>
