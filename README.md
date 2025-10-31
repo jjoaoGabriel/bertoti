@@ -27,7 +27,9 @@ Ao usar um aplicativo que coleta muitos dados pessoais, você pode obter uma exp
 
 ## 5. JAVA.
 
-<pre> ```package loja;
+### Cliente.java
+
+<pre>package loja;
 
 public class Cliente {
     private String nome;
@@ -53,11 +55,11 @@ public class Cliente {
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
-}
-🟦 Loja.java
-java
-Copiar código
-package loja;
+}</pre>
+
+### Loja.java
+
+<pre>package loja;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -84,8 +86,30 @@ public class Loja {
 
         return encontrados;
     }
-} ``` </pre>
+}</pre>
 
+### Teste.java
+
+<pre>package loja;
+
+import static org.junit.jupiter.api.Assertions.*;
+import java.util.List;
+import org.junit.jupiter.api.Test;
+
+class Teste {
+
+    @Test
+    void test() {
+        Loja loja = new Loja();
+
+        loja.addCliente(new Cliente("Carlos", "987654321"));
+
+        assertEquals(loja.getClientes().size(), 1);
+
+        List<Cliente> clientesEncontrados = loja.buscarClienteNome("Carlos");
+        assertEquals(clientesEncontrados.get(0).getCpf(), "987654321");
+    }
+}</pre>
 
 ## 6. Testes automatizados.
 ## 7. JAVA SQLite.
