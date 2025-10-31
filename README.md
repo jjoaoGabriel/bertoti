@@ -181,7 +181,7 @@ public class TesteLoja {
 
 ### Ollama.java
 
-<pre>import java.io.*;
+<prec>import java.io.*;
 import java.net.*;
 
 public class Ollama {
