@@ -28,9 +28,9 @@ Ao usar um aplicativo que coleta muitos dados pessoais, você pode obter uma exp
 ## 5. JAVA.
 
 <p align="center">
-      <img src="imagem/cliente.png" width="600" height="600">
-      <img src="imagem/loja.png" width="600" height="600">
-      <img src="imagem/teste.png" width="600" height="600">
+      <img src="imagem/cliente.png" width="800" height="800">
+      <img src="imagem/loja.png width="800" height="800">
+      <img src="imagem/teste.png" width="800" height800">
 </p>
 
 ## 6. Testes automatizados.
