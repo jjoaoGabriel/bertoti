@@ -176,6 +176,48 @@ public class TesteLoja {
     }
 }</pre>
 
+### Testee.java
+
+<pre>package loja;
+
+import static org.junit.jupiter.api.Assertions.*;
+import java.util.List;
+import org.junit.jupiter.api.Test;
+
+class Testee {
+
+    @Test
+    void testAdicionarEBuscarCliente() {
+        Loja loja = new Loja();
+
+        // Adiciona cliente
+        loja.addCliente(new Cliente("Carlos", "987654321"));
+
+        // Verifica se a loja tem exatamente 1 cliente
+        assertEquals(1, loja.getClientes().size(), "A loja deve conter 1 cliente após adicionar.");
+
+        // Busca cliente pelo nome
+        List<Cliente> clientesEncontrados = loja.buscarClienteNome("Carlos");
+
+        // Verifica se encontrou o cliente correto
+        assertEquals(1, clientesEncontrados.size(), "Deve encontrar 1 cliente com o nome Carlos.");
+        assertEquals("987654321", clientesEncontrados.get(0).getCpf(), "O CPF do cliente encontrado deve ser 987654321.");
+        assertEquals("Carlos", clientesEncontrados.get(0).getNome(), "O nome do cliente encontrado deve ser Carlos.");
+    }
+
+    @Test
+    void testBuscarClienteInexistente() {
+        Loja loja = new Loja();
+        loja.addCliente(new Cliente("Maria", "111222333"));
+
+        // Busca um nome que não existe
+        List<Cliente> clientesEncontrados = loja.buscarClienteNome("José");
+
+        // Deve retornar lista vazia
+        assertTrue(clientesEncontrados.isEmpty(), "Não deve encontrar cliente com o nome José.");
+    }
+}</pre>
+
 ## 7. JAVA SQLite.
 ## 8. Usar ollama4j.
 
