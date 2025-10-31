@@ -86,7 +86,31 @@ public class Loja {
 
         return encontrados;
     }
-}</pre>
+}</prec>
+
+### Teste.java
+
+<prec>package loja;
+
+import static org.junit.jupiter.api.Assertions.*;
+import java.util.List;
+import org.junit.jupiter.api.Test;
+
+class Teste {
+
+    @Test
+    void test() {
+        Loja loja = new Loja();
+
+        loja.addCliente(new Cliente("Carlos", "987654321"));
+
+        assertEquals(loja.getClientes().size(), 1);
+
+        List<Cliente> clientesEncontrados = loja.buscarClienteNome("Carlos");
+        assertEquals(clientesEncontrados.get(0).getCpf(), "987654321");
+    }
+}
+</prec>
 
 ## 6. Testes automatizados.
 
@@ -152,31 +176,6 @@ public class TesteLoja {
     }
 }</prec>
 
-## Testee.java
-
-public class Testee {
-
-    @Test
-    public void testConstrutor() {
-        Cliente cliente = new Cliente("João", "123.456.789-00");
-        assertEquals("João", cliente.getNome());
-        assertEquals("123.456.789-00", cliente.getCpf());
-    }
-
-    @Test
-    public void testSetNome() {
-        Cliente cliente = new Cliente("João", "123.456.789-00");
-        cliente.setNome("Maria");
-        assertEquals("Maria", cliente.getNome());
-    }
-
-    @Test
-    public void testSetCpf() {
-        Cliente cliente = new Cliente("João", "123.456.789-00");
-        cliente.setCpf("987.654.321-00");
-        assertEquals("987.654.321-00", cliente.getCpf());
-    }
-}</prec>
 ## 7. JAVA SQLite.
 ## 8. Usar ollama4j.
 
