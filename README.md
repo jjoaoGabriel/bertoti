@@ -88,30 +88,95 @@ public class Loja {
     }
 }</pre>
 
-### Teste.java
+## 6. Testes automatizados.
 
-<pre>package loja;
+## TesteCliente.java
 
-import static org.junit.jupiter.api.Assertions.*;
-import java.util.List;
+<prec>package loja;
+
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
-class Teste {
+public class TesteCliente {
 
     @Test
-    void test() {
-        Loja loja = new Loja();
-
-        loja.addCliente(new Cliente("Carlos", "987654321"));
-
-        assertEquals(loja.getClientes().size(), 1);
-
-        List<Cliente> clientesEncontrados = loja.buscarClienteNome("Carlos");
-        assertEquals(clientesEncontrados.get(0).getCpf(), "987654321");
+    public void testConstrutor() {
+        Cliente cliente = new Cliente("João", "123.456.789-00");
+        assertEquals("João", cliente.getNome());
+        assertEquals("123.456.789-00", cliente.getCpf());
     }
-}</pre>
 
-## 6. Testes automatizados.
+    @Test
+    public void testSetNome() {
+        Cliente cliente = new Cliente("João", "123.456.789-00");
+        cliente.setNome("Maria");
+        assertEquals("Maria", cliente.getNome());
+    }
+
+    @Test
+    public void testSetCpf() {
+        Cliente cliente = new Cliente("João", "123.456.789-00");
+        cliente.setCpf("987.654.321-00");
+        assertEquals("987.654.321-00", cliente.getCpf());
+    }
+}</prec>
+
+## TesteLoja.java
+
+<prec>package loja;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class TesteLoja {
+
+    @Test
+    public void testConstrutor() {
+        Cliente cliente = new Cliente("João", "123.456.789-00");
+        assertEquals("João", cliente.getNome());
+        assertEquals("123.456.789-00", cliente.getCpf());
+    }
+
+    @Test
+    public void testSetNome() {
+        Cliente cliente = new Cliente("João", "123.456.789-00");
+        cliente.setNome("Maria");
+        assertEquals("Maria", cliente.getNome());
+    }
+
+    @Test
+    public void testSetCpf() {
+        Cliente cliente = new Cliente("João", "123.456.789-00");
+        cliente.setCpf("987.654.321-00");
+        assertEquals("987.654.321-00", cliente.getCpf());
+    }
+}</prec>
+
+## Testee.java
+
+public class Testee {
+
+    @Test
+    public void testConstrutor() {
+        Cliente cliente = new Cliente("João", "123.456.789-00");
+        assertEquals("João", cliente.getNome());
+        assertEquals("123.456.789-00", cliente.getCpf());
+    }
+
+    @Test
+    public void testSetNome() {
+        Cliente cliente = new Cliente("João", "123.456.789-00");
+        cliente.setNome("Maria");
+        assertEquals("Maria", cliente.getNome());
+    }
+
+    @Test
+    public void testSetCpf() {
+        Cliente cliente = new Cliente("João", "123.456.789-00");
+        cliente.setCpf("987.654.321-00");
+        assertEquals("987.654.321-00", cliente.getCpf());
+    }
+}</prec>
 ## 7. JAVA SQLite.
 ## 8. Usar ollama4j.
 
@@ -120,7 +185,7 @@ class Teste {
 <pre>import java.io.*;
 import java.net.*;
 
-public class OllamaExample {
+public class Ollama {
     public static void main(String[] args) {
         try {
             // Usa 127.0.0.1 pois o log mostra que o Ollama escuta nesse IP
