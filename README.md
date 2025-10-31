@@ -26,6 +26,13 @@ Ao usar um aplicativo que coleta muitos dados pessoais, você pode obter uma exp
 </p>
 
 ## 5. JAVA.
+
+<p align="center">
+      <img src="imagem/cliente.png" width="600" height="600">
+      <img src="imagem/loja.png" width="600" height="600">
+      <img src="imagem/teste.png" width="600" height="600">
+</p>
+
 ## 6. Testes automatizados.
 ## 7. JAVA SQLite.
 ## 8. Usar ollama4j.
