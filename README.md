@@ -27,11 +27,65 @@ Ao usar um aplicativo que coleta muitos dados pessoais, você pode obter uma exp
 
 ## 5. JAVA.
 
-<p align="center">
-      <img src="imagem/cliente.png" width="800" height="800">
-      <img src="imagem/loja.png" width="800" height="800">
-      <img src="imagem/teste.png" width="800" height800">
-</p>
+<pre> ```package loja;
+
+public class Cliente {
+    private String nome;
+    private String cpf;
+
+    public Cliente(String nome, String cpf) {
+        this.nome = nome;
+        this.cpf = cpf;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+}
+🟦 Loja.java
+java
+Copiar código
+package loja;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class Loja {
+
+    private List<Cliente> clientes = new LinkedList<Cliente>();
+
+    public void addCliente(Cliente cliente) {
+        clientes.add(cliente);
+    }
+
+    public List<Cliente> getClientes() {
+        return clientes;
+    }
+
+    public List<Cliente> buscarClienteNome(String nome) {
+        List<Cliente> encontrados = new LinkedList<Cliente>();
+
+        for (Cliente cliente : clientes) {
+            if (cliente.getNome().equals(nome))
+                encontrados.add(cliente);
+        }
+
+        return encontrados;
+    }
+} ``` </pre>
+
 
 ## 6. Testes automatizados.
 ## 7. JAVA SQLite.
