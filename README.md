@@ -114,7 +114,7 @@ class Teste {
 
 ## 6. Testes automatizados.
 
-## TesteCliente.java
+### TesteCliente.java
 
 <pre>package loja;
 
@@ -145,7 +145,7 @@ public class TesteCliente {
     }
 }</pre>
 
-## TesteLoja.java
+### TesteLoja.java
 
 <pre>package loja;
 
