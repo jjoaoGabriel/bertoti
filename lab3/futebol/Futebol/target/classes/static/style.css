@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+        linear-gradient(
+            rgba(0, 40, 0, 0.8),
+            rgba(0, 60, 0, 0.9)
+        ),
+        url("https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1920&auto=format&fit=crop");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    font-size: 42px;
+    letter-spacing: 1px;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 0 10px rgba(255,255,255,0.2),
+        0 0 20px rgba(0,0,0,0.6);
+}
+
+.form {
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 30px;
+}
+
+.form input {
+    width: 180px;
+    padding: 12px;
+
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 10px;
+
+    background: rgba(255,255,255,0.08);
+
+    color: white;
+    outline: none;
+
+    backdrop-filter: blur(5px);
+
+    transition: 0.3s;
+}
+
+.form input::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+.form input:focus {
+    border-color: #00ff66;
+
+    box-shadow:
+        0 0 10px rgba(0, 255, 102, 0.5);
+}
+
+button {
+    padding: 12px 18px;
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+    font-weight: bold;
+
+    background: linear-gradient(
+        135deg,
+        #00c853,
+        #009624
+    );
+
+    color: white;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 15px rgba(0, 255, 100, 0.4);
+}
+
+table {
+    width: 95%;
+
+    margin: auto;
+
+    border-collapse: collapse;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(8px);
+
+    box-shadow:
+        0 0 25px rgba(0,0,0,0.4);
+}
+
+th {
+    background: rgba(0, 200, 83, 0.35);
+
+    color: white;
+
+    padding: 15px;
+
+    font-size: 18px;
+}
+
+td {
+    padding: 14px;
+
+    text-align: center;
+
+    border-top: 1px solid rgba(255,255,255,0.08);
+
+    color: rgba(255,255,255,0.92);
+}
+
+tr:hover {
+    background: rgba(255,255,255,0.06);
+
+    transition: 0.3s;
+}

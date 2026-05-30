@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogadores CRUD</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Cadastro de Jogadores de Futebol</h1>
+
+<div class="form">
+
+    <input
+            type="text"
+            id="name"
+            placeholder="Nome do Jogador"
+    >
+
+    <input
+            type="text"
+            id="position"
+            placeholder="Posição"
+    >
+
+    <input
+            type="text"
+            id="team"
+            placeholder="Time"
+    >
+
+    <input
+            type="number"
+            id="age"
+            placeholder="Idade"
+    >
+
+    <button onclick="addPlayer()">
+        Adicionar
+    </button>
+
+    <button onclick="updatePlayer()">
+        Atualizar
+    </button>
+
+</div>
+
+<table>
+
+    <thead>
+
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Posição</th>
+        <th>Time</th>
+        <th>Idade</th>
+    </tr>
+
+    </thead>
+
+    <tbody id="table-body"></tbody>
+
+</table>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
